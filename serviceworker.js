@@ -5,9 +5,7 @@ var CACHED_URLS = [
   'paddy.jpg',
     'styles.css',
     'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en',
-    'https://code.getmdl.io/1.3.0/material.min.js',
-    'https://fonts.googleapis.com/icon?family=Material+Icons',
-    'https://code.getmdl.io/1.3.0/material.teal-red.min.css'
+    'https://fonts.googleapis.com/icon?family=Material+Icons'
     
     
 ];
