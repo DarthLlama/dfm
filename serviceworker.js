@@ -1,8 +1,8 @@
 var CACHE_NAME = 'gih-cache';
 var CACHED_URLS = [
-    'offline.html',
-    'mystyles.css',
-    'dino.png'
+  'offline.html',
+  'mystyles.css',
+  'dino.png'
 ];
 
 self.addEventListener('install', function(event) {
@@ -13,11 +13,16 @@ self.addEventListener('install', function(event) {
   );
 });
 
-
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     fetch(event.request).catch(function() {
-      return caches.match('offline.html');
+      return caches.match(event.request).then(function(response) {
+        if (response) {
+          return response;
+        } else if (event.request.headers.get('accept').includes('text/html')) {
+          return caches.match('offline.html');
+        }
+      });
     })
   );
 });
