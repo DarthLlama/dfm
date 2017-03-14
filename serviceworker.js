@@ -3,9 +3,7 @@ var CACHED_URLS = [
   'offline.html',
   'mystyles.css',
   'paddy.jpg',
-    'styles.css',
-    'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en',
-    'https://fonts.googleapis.com/icon?family=Material+Icons'
+    'styles.css'
     
     
 ];
