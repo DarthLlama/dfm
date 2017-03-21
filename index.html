@@ -1,81 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link type="image/png" href="assets/icons/favicon.ico" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Local News!</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
-      
-      <link rel="icon" href="assets/icons/favicon-16x16.png" type="image/png" sizes="16x16" />
-      <link rel="icon" href="assets/icons/favicon-32x32.png" type="image/png" sizes="32x32" />
-      <link rel="icon" href="assets/icons/favicon-96x96.png" type="image/png" sizes="92x92" />
-      
-      <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
-      <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
-      <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
-      <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
-      <link rel="manifest" href="manifest.json">
-      <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
-      <meta name="theme-color" content="#ffffff">
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mystyles.css">
+<title>Test mobile page</title>
+</head>
 
-	</head>
-	
-	<body>
-        <!-- Navigation -->
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Search</a></li>
-            <li><a href="#">Favourites</a></li>
-            <li><a href="#">Personal</a></li>
-        </ul>
-        <!-- Articles -->
-        <div class="flexbox">
-            <li><a href="index.html">
-                <img src="assets/img/article1.jpg" alt="Image of traffic" />
-                <h2>Ice Cream Van Overturned! Hundreds and Thousands Injured!</h2>
-                <h4>Daily Express</h4>
-                <h4>2 hours ago</h4>
-                </a></li>
-            <li><a href="#">
-                <img src="assets/img/article2.jpg" alt="Image of flooding" />
-                <h2>Stoke City Wracked by Floods!</h2>
-                <h4>Daily Express</h4>
-                <h4>2 hours ago</h4>
-                </a></li>
-            <li><a href="#">
-                <img src="assets/img/article3.jpg" alt="Image of new library" />
-                <h2>Silverdale Library Opens to Historic Crowds!</h2>
-                <h4>Daily Express</h4>
-                <h4>2 hours ago</h4>
-                </a></li>
-        </div>
-        
-        <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-                    // Registration was successful
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }).catch(function(err) {
-                    // registration failed :(
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-            });
-        }
-      </script>
-    </body>
+<body>
+<header><h1>My Test Page</h1></header>
+<div id="container">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim venenatis consequat. Praesent quis odio a neque venenatis ornare. Nam vel sem sed magna porttitor ultrices. Nunc nec turpis vitae lacus efficitur pulvinar in id nibh. Praesent sed mi vel ipsum faucibus ultrices iaculis eget dui. Praesent ultricies velit vel vestibulum convallis. Praesent accumsan luctus sem, at consectetur erat convallis pretium. Nunc pulvinar nec nibh a mollis. Donec a metus in sapien sollicitudin fermentum vitae eu eros.</p>
+<p>Nulla pellentesque nunc vel lectus semper, tincidunt blandit magna maximus. Nam vel imperdiet lacus. Donec et euismod massa, eu suscipit ipsum. Pellentesque lobortis nulla vitae scelerisque elementum. Curabitur at tempor nisl, vel imperdiet orci. Fusce commodo justo nibh, vel convallis purus blandit vitae. Sed a arcu eget mauris rutrum bibendum.</p>
+</div>
+<footer>Footer From Me</footer>
+</body>
 </html>
