@@ -6,6 +6,8 @@ var CACHED_URLS = [
     'min-style.css',
     'styles.css',
     'mystyles.css',
+    'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en',
+    'https://fonts.googleapis.com/icon?family=Material+Icons',
   // JavaScript
     'material.js',
   // Images
@@ -16,6 +18,18 @@ var CACHED_URLS = [
     'appimages/android-icon-144x144.png',
     'appimages/android-icon-192x192.png',
     'appimages/paddy.jpg',
+    'appimages/favicon.ico',
+    'appimages/favicon-16x16.ico',
+    'appimages/favicon-96x96.ico',
+    'appimages/favicon.ico',
+    'eventimages/example-blog01.jpg',
+    'eventimages/example-blog02.jpg',
+    'eventimages/example-blog03.jpg',
+    'eventimages/example-blog04.jpg',
+    'eventimages/example-blog05.jpg',
+    'eventimages/example-blog06.jpg',
+    'eventimages/example-blog07.jpg',
+    'eventimages/example-blog08.jpg'
     
 ];
 
