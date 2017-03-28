@@ -22,14 +22,14 @@ var CACHED_URLS = [
     'appimages/favicon-16x16.ico',
     'appimages/favicon-96x96.ico',
     'appimages/favicon.ico',
-    'eventimages/example-blog01.jpg',
-    'eventimages/example-blog02.jpg',
-    'eventimages/example-blog03.jpg',
-    'eventimages/example-blog04.jpg',
-    'eventimages/example-blog05.jpg',
-    'eventimages/example-blog06.jpg',
-    'eventimages/example-blog07.jpg',
-    'eventimages/example-blog08.jpg'
+    'eventsimages/example-blog01.jpg',
+    'eventsimages/example-blog02.jpg',
+    'eventsimages/example-blog03.jpg',
+    'eventsimages/example-blog04.jpg',
+    'eventsimages/example-blog05.jpg',
+    'eventsimages/example-blog06.jpg',
+    'eventsimages/example-blog07.jpg',
+    'eventsimages/example-blog08.jpg'
     
 ];
 
