@@ -4,7 +4,8 @@ var CACHED_URLS = [
   'first.html',
   // Stylesheets and fonts
     'min-style.css',
-    'style.css',
+    'styles.css',
+    'mystyles.css',
   // JavaScript
     'material.js',
   // Images
@@ -13,7 +14,9 @@ var CACHED_URLS = [
     'appimages/android-icon-72x72.png',
     'appimages/android-icon-96x96.png',
     'appimages/android-icon-144x144.png',
-    'appimages/android-icon-192x192.png'
+    'appimages/android-icon-192x192.png',
+    'appimages/paddy.jpg',
+    
 ];
 
 self.addEventListener('install', function(event) {
