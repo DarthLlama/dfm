@@ -202,8 +202,6 @@ img.article-image {
   padding: 10px 0 0;
 }
 
-
-
 .demo-card-event > .mdl-card__actions {
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -214,7 +212,16 @@ img.article-image {
     display: flex;
 }
 
+#map {
+    height: 100px;
+    width: 100%;
+}
 
+.offline-map {
+    background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=53.0027,2.1794&zoom=2&size=600x100&key=AIzaSyDDCkYNBfhXUt6Ogx_ITtmNdjt0w9oW1rE);
+    height: 100px;
+    width: 100%;
+}
 
 
 

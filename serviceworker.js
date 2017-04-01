@@ -7,6 +7,7 @@ var CACHED_URLS = [
     BASE_PATH + 'min-style.css',
     BASE_PATH + 'styles.css',
     BASE_PATH + 'mystyles.css',
+    BASE_PATH + 'offline-map.js',
     'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en',
     'https://fonts.googleapis.com/icon?family=Material+Icons',
   // JavaScript
@@ -30,7 +31,8 @@ var CACHED_URLS = [
     BASE_PATH + 'eventsimages/example-blog05.jpg',
     BASE_PATH + 'eventsimages/example-blog06.jpg',
     BASE_PATH + 'eventsimages/example-blog07.jpg',
-    BASE_PATH + 'eventsimages/example-blog08.jpg'
+    BASE_PATH + 'eventsimages/example-blog08.jpg',
+    BASE_PATH + 'https://maps.googleapis.com/maps/api/staticmap?center=53.0027,2.1794&zoom=2&size=600x100&key=AIzaSyDDCkYNBfhXUt6Ogx_ITtmNdjt0w9oW1rE'
     
 ];
 
@@ -57,6 +59,17 @@ self.addEventListener('fetch', function(event) {
         });
       })
     );
+       // Handle requests for Google Maps JavaScript API file
+  } else if (requestURL.href === googleMapsAPIJS) {
+    event.respondWith(
+      fetch(
+        googleMapsAPIJS+'&'+Date.now(),
+        { mode: 'no-cors', cache: 'no-store' }
+      ).catch(function() {
+        return caches.match('offline-map.js');
+      })
+    );
+      
   } else if (
     CACHED_URLS.includes(requestURL.href) ||
     CACHED_URLS.includes(requestURL.pathname) {
