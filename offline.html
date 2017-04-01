@@ -104,5 +104,18 @@
             });
         }
       </script>
+      <script>
+      function initMap() {
+        var staffs = {lat: 53.0027, lng: 2.1794};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 2,
+          center: staffs
+        });
+      }
+    </script>
+      <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDCkYNBfhXUt6Ogx_ITtmNdjt0w9oW1rE&callback=initMap">
+    </script>
+      <script src="offline-map.js"></script>
   </body>
 </html>
