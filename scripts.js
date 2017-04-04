@@ -25,6 +25,7 @@ fetch("events.json")
                 <div class="mdl-card__actions mdl-card--border">
                     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="${event.link}" data-upgraded=",MaterialButton,MaterialRipple">Read more<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
                 </div>
+                <div class="header">${event.header}</div>
             </div>`;
         }).join("\n");
         const eventsContainer = document.getElementById('events');
@@ -41,7 +42,7 @@ if(askJack){
             "question": e.target.question.value,
         };
 
-        fetch("https://darthllama.github.io/dfm/first.html", {mode: "no-cors", method: "POST", body: contact})
+        fetch("https://darthllama.github.io/dfm/index.html", {mode: "no-cors", method: "POST", body: contact})
             .then(response => {
                 console.log('hello response!', response);
             }).catch(() => {
