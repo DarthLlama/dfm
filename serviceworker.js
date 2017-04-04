@@ -32,7 +32,7 @@ var CACHED_URLS = [
     BASE_PATH + 'eventsimages/example-blog06.jpg',
     BASE_PATH + 'eventsimages/example-blog07.jpg',
     BASE_PATH + 'eventsimages/example-blog08.jpg',
-    BASE_PATH + 'https://maps.googleapis.com/maps/api/staticmap?center=53.0027,2.1794&zoom=2&size=600x100&key=AIzaSyDDCkYNBfhXUt6Ogx_ITtmNdjt0w9oW1rE'
+    BASE_PATH + 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDDCkYNBfhXUt6Ogx_ITtmNdjt0w9oW1rE&callback=initMap'
     
 ];
 
@@ -70,15 +70,17 @@ self.addEventListener('fetch', function(event) {
       })
     );
       
-  } 
-  else if (
-    CACHED_URLS.includes(requestURL.href) || CACHED_URLS.includes(requestURL.pathname) {
-		event.respondWith(caches.open(CACHE_NAME).then(function(cache) {
-			return cache.match(event.request).then(function(response) {
+  } else if (
+    CACHED_URLS.includes(requestURL.href) ||
+    CACHED_URLS.includes(requestURL.pathname) {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(function(cache) {
+        return cache.match(event.request).then(function(response) {
           return response || fetch(event.request);
         })
-      }));
-	}
+      })
+    );
+  }
 });
 
 
