@@ -41,7 +41,7 @@ if(askJack){
             "question": e.target.question.value,
         };
 
-        fetch("https://darthllama.github.io/dfm/second.html", {mode: "no-cors", method: "POST", body: contact})
+        fetch("https://darthllama.github.io/dfm/first.html", {mode: "no-cors", method: "POST", body: contact})
             .then(response => {
                 console.log('hello response!', response);
             }).catch(() => {
